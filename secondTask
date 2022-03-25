@@ -8,15 +8,15 @@ namespace ЯЮниор
         {
             double timeInSecond = 90.5;
             uint distanceInMeters = 181;
-            double speedInMetersPerSecond = distanceInMeters / timeInSecond;
-            double maxSpeed = 150;
+            int speedInMetersPerSecond = 2;
+            float maxSpeed = 5.5;
             bool violation = false;
             string driversName = "Alesha";
             char firstLetterOfName = 'A';
-            ulong carMileageInMeters = 14902231;
             ushort carNomber = 123;
-            string carBrand = "Toyota";
-            Console.WriteLine(speedInMetersPerSecond);
+            decimal penalty = 1.5E6m;
+            long carMileage = 1300000;
+
         }
     }
 }
