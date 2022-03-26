@@ -1,0 +1,19 @@
+using System;
+
+namespace ЯЮниор
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Сколько людей в очереди?");
+            int countOfPeople = Convert.ToInt32(Console.ReadLine());
+            int minutesInHour = 60;
+            int onePersonTime = 10;
+            int waitingTimeInMinutes = countOfPeople * onePersonTime;
+            int waitingMinutes = waitingTimeInMinutes % minutesInHour;
+            int waitingHours = waitingTimeInMinutes / minutesInHour;
+            Console.WriteLine($"Вы должны отстоять в очереди {waitingHours} часа и {waitingMinutes} минут.");
+        }
+    }
+}
