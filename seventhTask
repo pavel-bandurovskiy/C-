@@ -1,0 +1,22 @@
+using System;
+
+namespace ЯЮниор
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int crystallCost = 99;
+            Console.WriteLine($"Цена за один кристалл {crystallCost} золота");
+            Console.WriteLine("Сколько у вас золота?");
+            int usersGold = Convert.ToInt32(Console.ReadLine());
+            int maxCountCrystalls = usersGold / crystallCost;
+            Console.WriteLine($"Вы можете купить {maxCountCrystalls} кристалла);
+            Console.WriteLine("Сколько кристаллов хотите купить?");
+            int crystalls = Convert.ToInt32(Console.ReadLine());
+            usersGold -= crystalls * crystallCost;
+            Console.WriteLine($"У вас теперь {crystalls} кристаллов и {usersGold} золота");
+            Console.ReadKey();
+        }
+    }
+}
