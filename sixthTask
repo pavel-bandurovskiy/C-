@@ -1,0 +1,17 @@
+using System;
+
+namespace ЯЮниор
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int coutImages = 3;
+            int usersCoutImages = 52;
+            int fullCoutLine = usersCoutImages / coutImages;
+            int imageOverMeasure = usersCoutImages % coutImages;
+            Console.WriteLine($"Количество полных рядов = {fullCoutLine}");
+            Console.WriteLine($"Количество картинов свер меры = {imageOverMeasure}");
+        }
+    }
+}
