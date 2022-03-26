@@ -1,0 +1,20 @@
+using System;
+
+namespace ЯЮниор
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Здравствуйте, как Вас зовут?");
+            string usersName = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Сколько Вам лет?");
+            int usersAge = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Какой Ваш знак зодиака?");
+            string usersSign = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Где Вы работаете?");
+            string usersProfession = Convert.ToString(Console.ReadLine());
+            Console.WriteLine($"Вас зовут {usersName}. Вам {usersAge} лет, Ваш знак Зодиака {usersSign} и ваша должность {usersProfession}");
+        }
+    }
+}
