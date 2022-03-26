@@ -14,7 +14,7 @@ namespace ЯЮниор
             string usersSign = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Где Вы работаете?");
             string usersProfession = Convert.ToString(Console.ReadLine());
-            Console.WriteLine($"Вас зовут {usersName}. Вам {usersAge} лет, Ваш знак Зодиака {usersSign} и ваша должность {usersProfession}");
+            Console.WriteLine($"Вас зовут {usersName}. Вам {usersAge} лет, Ваш знак Зодиака {usersSign} и Ваша должность {usersProfession}");
         }
     }
 }
